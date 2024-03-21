@@ -7,7 +7,14 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "commit": "git cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "czConfig": "./cz.config.js"
+    }
   },
   "dependencies": {
     "@nuxt/ui": "^2.14.2",
@@ -17,6 +24,8 @@
   },
   "devDependencies": {
     "@iconify-json/mynaui": "^1.1.6",
+    "commitizen": "^4.3.0",
+    "git-cz": "^4.9.0",
     "sass": "^1.72.0"
   }
 }
