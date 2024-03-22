@@ -18,12 +18,14 @@
   },
   "dependencies": {
     "@nuxt/ui": "^2.14.2",
+    "@pinia/nuxt": "^0.5.1",
     "nuxt": "^3.11.1",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@iconify-json/mynaui": "^1.1.6",
+    "@unocss/nuxt": "^0.58.6",
     "commitizen": "^4.3.0",
     "git-cz": "^4.9.0",
     "sass": "^1.72.0"
