@@ -21,7 +21,7 @@
 </script>
 <style lang="scss">
 :root {
-  --page-height: 60px;
+  --page-height: 68px;
 }
 
 ::-webkit-scrollbar{

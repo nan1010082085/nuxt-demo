@@ -1,11 +1,8 @@
 <template>
   <div class="header">
-    <div class="logo">
-      <div>{{ msg }}</div>
-    </div>
+    <div class="logo"></div>
     <div v-for="(item, index) in data" :key="index" class="content">
-      <div :class="['content-item', { active: active == item.key }]" @click="routeTo(item.key)">{{ item.label }}
-      </div>
+      <div :class="['content-item', { active: active == item.key }]" @click="routeTo(item.key)">{{ item.label }}</div>
     </div>
   </div>
 </template>
@@ -49,23 +46,25 @@ const msg = 'logo'
 </script>
 
 <style lang="scss" scoped>
+$def-height: 68px;
 .header {
   background-color: #fff;
   margin: 0 auto;
   width: 1024px;
-  height: 60px;
+  height: $def-height;
   display: flex;
 
   .logo {
-    width: 120px;
-    line-height: 60px;
-    text-align: center
+    width: 130px;
+    background-image: url('~/assets/logo.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
   }
 
   .content {
     display: flex;
     justify-content: flex-start;
-    line-height: 60px;
+    line-height: $def-height;
     position: relative;
 
     &-item {
@@ -75,20 +74,20 @@ const msg = 'logo'
       font-size: 18px;
       text-align: center;
       background: linear-gradient(to right, #fff, #07b966) no-repeat right bottom;
-      background-size: 0px 2px;
+      background-size: 0px 3px;
       transition:
         background-size 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
         font-weight 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
       &:hover {
         background-position-x: left;
-        background-size: 100% 2px;
+        background-size: 100% 3px;
         font-weight: bold;
       }
 
       &.active {
         background-position-x: left;
-        background-size: 100% 2px;
+        background-size: 100% 3px;
         font-weight: bold;
       }
     }

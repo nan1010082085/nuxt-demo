@@ -64,10 +64,14 @@ function renderClassBg() {
   .bg#{$i} {
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    transition: all .6s cubic-bezier(0.215, 0.610, 0.355, 1);
+    &:hover {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+    }
   }
 
   .blog-card.bg#{$i} {
-    background-image: url('../assets/blog/blog-placeholder-#{$i}.jpg');
+    background-image: url('~/assets/blog/blog-placeholder-#{$i}.jpg');
   }
 }
 </style>
