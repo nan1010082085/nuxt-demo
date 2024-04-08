@@ -74,20 +74,20 @@ $def-height: 68px;
       font-size: 18px;
       text-align: center;
       background: linear-gradient(to right, #fff, #07b966) no-repeat right bottom;
-      background-size: 0px 3px;
+      background-size: 0px 2px;
       transition:
         background-size 0.5s cubic-bezier(0.165, 0.84, 0.44, 1),
         font-weight 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 
       &:hover {
         background-position-x: left;
-        background-size: 100% 3px;
+        background-size: 100% 2px;
         font-weight: bold;
       }
 
       &.active {
         background-position-x: left;
-        background-size: 100% 3px;
+        background-size: 100% 2px;
         font-weight: bold;
       }
     }

@@ -1,8 +1,7 @@
 <template>
   <div class="about">
     <div class="title">
-      <h1>杨</h1>
-      <h2>东楠</h2>
+      <h1> yang dong nan</h1>
     </div>
 
     <UCarousel v-slot="{ item }" :items="items">

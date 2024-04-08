@@ -10,11 +10,14 @@ export default <RouterConfig>{
       redirect: '/home'
     },
     ...(() => {
-      return pages.map((key) => ({
-        name: key.toLowerCase(),
-        path: `/${key.toLowerCase()}`,
-        component: () => import(`~/pages/${key}.vue`).then((r) => r.default || r)
-      }));
+      return pages.map((key) => {
+        console.log(key)
+        return {
+          name: key.toLowerCase(),
+          path: `/${key.toLowerCase()}`,
+          component: () => import(`~/pages/${key}.vue`).then((r) => r.default || r)
+        }
+      });
     })()
   ]
 };
