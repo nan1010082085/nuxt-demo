@@ -13,6 +13,9 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
+//@ts-ignore
+const blogs = import.meta.glob('public/blog/*.(blog).(ts|json)', { eager: true })
+const blogArr: string[] = Object.values(blogs).map((i: any) => i.default);
 
 const list = ref([
   {
@@ -41,16 +44,16 @@ const list = ref([
   }
 ])
 
+
 function renderClassBg() {
   const p = Math.ceil(Math.random() * 4);
   return `bg${p}`
 }
-
 </script>
 <style lang="scss" scoped>
 .blog-card {
   margin-bottom: 20px;
-  min-height: 230px;
+  min-height: 100px;
   cursor: pointer;
   color: #fff;
 

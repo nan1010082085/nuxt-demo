@@ -2,6 +2,6 @@
 export default defineNuxtConfig({
   components: true,
   devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@pinia/nuxt'],
-  modulesDir: ['node_modules']
+  modules: ['@nuxt/ui', '@pinia/nuxt', '@vueuse/nuxt'],
+  modulesDir: ['node_modules'],
 });

@@ -17,17 +17,17 @@ const active = ref(name?.toString().toLowerCase() || '');
 
 const data = ref([
   {
-    label: '首页',
+    label: '前导',
     key: 'home',
   },
   {
     label: '文档',
     key: 'view',
   },
-  {
-    label: '日志',
-    key: 'blog',
-  },
+  // {
+  //   label: '日志',
+  //   key: 'blog',
+  // },
   {
     label: '关于',
     key: 'about'

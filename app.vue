@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NuxtLoadingIndicator />
     <div class="app-header">
       <Header />
     </div>
@@ -53,6 +54,14 @@
   .app-footer {
     height: var(--page-height);
     background: #2c3e50;
+  }
+}
+
+.button-group {
+  display: flex;
+  align-items: center;
+  button {
+    margin-left: 8px;
   }
 }
 </style>

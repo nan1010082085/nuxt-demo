@@ -11,7 +11,6 @@ export default <RouterConfig>{
     },
     ...(() => {
       return pages.map((key) => {
-        console.log(key)
         return {
           name: key.toLowerCase(),
           path: `/${key.toLowerCase()}`,
